@@ -1,0 +1,55 @@
+#page-landing {
+    min-height: 100vh;
+    text-align: center;
+    background:linear-gradient(329.54deg, #29b6d1 0%, #007fff 100%) no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#content {
+    /*! Alinha ao Centro, só consegue alinhar se o display do conteúdo anterior for "Flex"*/
+    margin: auto; 
+    width: 90%;
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd645;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /*! Alinha ao Centro */
+    transition: background .2s;
+}
+
+.visit a:hover {
+    background: #96feff;
+}
+
+#logo {
+    animation-delay: 60ms;
+}
+
+.location {
+    animation-delay: 120ms;
+}
+
+main h1 {
+    animation-delay: 180ms;
+}
+
+.visit p {
+    animation-delay: 240ms;
+}
+
+.visit a {
+    animation-delay: 300ms;
+}
