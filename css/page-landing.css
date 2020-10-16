@@ -9,12 +9,13 @@
 #content {
     /*! Alinha ao Centro, só consegue alinhar se o display do conteúdo anterior for "Flex"*/
     margin: auto; 
-    width: 90%;
+    width: min(90%, 112rem);
 }
 
-.location, h1, .visit p {
+.location,
+h1,
+.visit p {
     height: 16vh;
-
 }
 
 .visit a {
@@ -43,6 +44,7 @@
 }
 
 main h1 {
+    font-size: clamp(4rem, 8vw, 8.4rem);
     animation-delay: 180ms;
 }
 
@@ -52,4 +54,56 @@ main h1 {
 
 .visit a {
     animation-delay: 300ms;
+}
+
+/** Adicionando Resursividade! Desktop version */
+
+@media (min-width: 760px) {
+    #content {
+        padding: 5rem 2rem;
+        /*shorthand background: image repeat position / size */
+        background: url(../assets/bg.svg) no-repeat 80% / clamp(30rem, 54vw, 56rem);
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        /*! Coloca o valor na posição inicial antes mesmo de aplicar regras CSS:*/
+        height: initial; 
+        text-align: initial;
+    }
+
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-weight: bold;
+        width: min(300px, 80%);
+        line-height: .88;
+        /*! function clamp (Minimo, Esperado, Máximo):*/
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 300px);
+    }
+
+    .visit a {
+        margin: initial;
+    }
+
 }
