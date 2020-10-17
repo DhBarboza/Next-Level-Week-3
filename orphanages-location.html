@@ -10,7 +10,17 @@
     <link rel="stylesheet" href="./css/page-orphanages.css">
     <link rel="stylesheet" href="./css/animation.css">
 
+    <!--Add Fonts style the Google API's -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Add Leafletjs (Maps)-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
     <title>Orphanages Location</title>
     
@@ -33,14 +43,14 @@
         </aside>
 
         <!--Map-->
-        <div id="map">
-        
-        </div>
+        <div id="map" class="animate-appear"></div>
 
         <a href="crate-orphanage.html" class="create-orphanage" title="Cadastre um Orfanato">
             <img src="./assets/plus.svg" alt="Cadastrar Orfanato">
         </a>
     </div>
+
+    <script src="./js/page-orphanages.js"></script>
 
 </body>
 </html>

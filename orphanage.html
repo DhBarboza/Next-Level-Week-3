@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/logo-icon.png">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/page-orphaned.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <!--Add Fonts style the Google API's -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Add Leafletjs (Maps)-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <title>Ofanato</title>
+
+</head>
+
+<body>
+    <div id="page-orphaned">
+        <!--Barra Lateral!!-->
+        <aside class="animate-right sidebar">
+            <img src="./assets/map-marker.svg" alt="Happy">
+
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./assets/arrow-back.svg" alt="back">
+                </button>
+            </footer>
+
+        </aside>
+
+        <main class="with-sidebar">
+            <div class="orphanage-details">
+                <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                <!--Alterar para o que vc cadastrou-->
+                <div class="images">
+                    <button class="active" type="button">
+                        <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                    </button>
+
+                    <button class="active" type="button">
+                        <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                    </button>
+
+                    <button class="active" type="button">
+                        <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                    </button>
+
+                    <button class="active" type="button">
+                        <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                    </button>
+
+                    <button class="active" type="button">
+                        <img src="./assets/home.jpg" alt="Abrigo Feminino">
+                    </button>
+                </div>
+
+                <div class="orphanage-details-content">
+                    <h1>Abrigo Municipal Feminino</h1>
+
+                    <p>Presta Assistência a Mulheres e Crianças em situação de risco ou vunerabilidade social</p>
+                </div>
+
+                <div class="map-container">
+                    <div class="map"></div>
+
+                    <footer>
+                        <a href="">Visualizar Rotas no Google Maps</a>
+                    </footer>
+                </div>
+
+                <hr>
+
+                <h2>Instruções para Visita</h2>
+
+                <p>Venha Conhecer e compartilhe muito amor e paciência</p>
+
+                <div class="open-details">
+                    <div class="hour">
+                        <img src="./assets/clock.svg" alt="Horários">
+                        <!--Adicionar Texto com Horários de visita-->
+                    </div>
+
+                    <div class="open-on-weekends">
+                        <img src="./assets/info.svg" alt="Informações">
+                        <!--Adicionar Horários de Finais de semana se possuir-->
+                    </div>
+                </div>
+
+                <button class="primary-button" type="button">
+                    <img src="./assets/whatsapp.svg" alt="Whatsapp">
+                    Entrar em contato
+                </button>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/page-orphaned.js"></script>
+
+</body>
+
+</html>
